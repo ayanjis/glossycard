@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%
+}
+
+html { 
+  
+   background: url(../img/nahil.jpg) no-repeat center center fixed; 
+  
+  background-size: cover;
+}
+
+body {  
+  /* flex part */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* style part */
+  margin: 0; 
+  padding: 0 7rem;
+  
+}
+.container {
+  /* flex part */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  /* style part */
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.7) 25px 25px 50px, rgba(255, 255, 255, 0.2) 0px 0px 8px 4px inset;
+  backdrop-filter: blur(1.5px);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.4);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  min-width: 14rem;
+  max-width: 40rem;
+  height: auto;
+  overflow: hidden;
+  user-select: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.4s ease 0.2s;
+  padding: 1rem 0px;
+}
+
+.container:active {
+  backdrop-filter: blur(6px);
+}
+
+.container::before {
+content: "";
+background: linear-gradient(0deg, rgba(214,232,52,0) 31%, rgb(255 255 255 / 12%) 57%, rgba(214,232,52,0) 81%);
+width: 200%;
+height: 16rem;
+position: absolute;
+top: -30rem;
+transform: rotate(-20deg);
+transition: 0.5s ease 0s;
+}
+
+.container:hover::before
+{
+  top: 30rem;
+}
+
+h10,p {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0 0.75rem;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  background: rgb(255 255 255 / 11%);
+}
+
+h10 {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
